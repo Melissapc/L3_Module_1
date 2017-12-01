@@ -9,7 +9,7 @@ public class Algorithms {
 				return i;
 			}
 		}
-		return 0; // <- this needs changing
+		return 0;
 	}
 
 	public static Object countPearls(List<Boolean> oysters) {
@@ -24,11 +24,16 @@ public class Algorithms {
 	}
 
 	public static double findTallest(List<Double> peeps) {
+		
 		double tallest = 0;
 		for (int i = 0; i < peeps.size(); i++) {
-			// if(peeps.get(i))
+
+			if (peeps.get(i) > tallest) {
+				tallest = peeps.get(i);
+
+			}
 		}
-		return 0;
+		return tallest;
 	}
 
 	public static List<Double> sortScores(List<Double> results) {
@@ -56,5 +61,31 @@ public class Algorithms {
 			}
 		}
 		return unsortedSequences;
+	}
+
+	public static List<String> sortWords(List<String> words) {
+		for (int i = 0; i < words.size(); i++) {
+			for (int m = i + 1; m < words.size(); m++) {
+				if (words.get(i).compareTo(words.get(m)) > 0) {
+					String bg = words.get(i);
+					words.set(i, words.get(m));
+					words.set(m, bg);
+
+				}
+			}
+		}
+		return words;
+	}
+
+	public static String findLongestWord(List<String> words) {
+		int hold=
+		String longest="";
+		for(int i = 0; i < words.size(); i++) {
+			
+			if(words.get(i).length(){
+				
+			}
+		}
+		return null;
 	}
 }

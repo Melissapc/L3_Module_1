@@ -30,22 +30,22 @@ public class SearchingAndSortingAlgorithms {
 	}
 
 	/* 3. Create a method that will return the height of the tallest person. */
-//	@Test
-//	public void testFindMaxiumum() throws Exception {
-//		List<Double> peeps = Arrays.asList(new Double[] { 5.7, 6.2, 3.4, 6.2, 5.0, 5.5, 4.7, 6.2, 3.4, 4.2, 5.0, 4.5, 5.1, 6.6 });
-//		assertEquals(6.6, Algorithms.findTallest(peeps), 0.0);
-//	}
+	@Test
+	public void testFindMaxiumum() throws Exception {
+		List<Double> peeps = Arrays.asList(new Double[] { 5.7, 6.2, 3.4, 6.2, 5.0, 5.5, 4.7, 6.2, 3.4, 4.2, 5.0, 4.5, 5.1, 6.6 });
+		assertEquals(6.6, Algorithms.findTallest(peeps), 0.0);
+	}
 
 	/* 4. Create a method that will find the longest word. */
-//	@Test
-//	public void testFindMaxiumumString() throws Exception {
-//		List<String> words = Arrays.asList(new String[] { "accoutrements", "acumen", "anomalistic", "auspicious", "bellwether",
-//				"callipygian", "circumlocution", "concupiscent", "conviviality", "coruscant", "cuddlesome", "cupidity", "cynosure",
-//				"ebullient", "equanimity", "excogitate", "gasconading", "idiosyncratic", "luminescent", "magnanimous", "nidificate",
-//				"osculator", "parsimonious", "penultimate", "perfidiousness", "perspicacious", "proficuous", "remunerative", "saxicolous",
-//				"sesquipedalian", "superabundant", "unencumbered", "unparagoned", "usufruct", });
-//		assertEquals("circumlocution", Algorithms.findLongestWord(words));
-//	}
+	@Test
+	public void testFindMaxiumumString() throws Exception {
+		List<String> words = Arrays.asList(new String[] { "accoutrements", "acumen", "anomalistic", "auspicious", "bellwether",
+				"callipygian", "circumlocution", "concupiscent", "conviviality", "coruscant", "cuddlesome", "cupidity", "cynosure",
+				"ebullient", "equanimity", "excogitate", "gasconading", "idiosyncratic", "luminescent", "magnanimous", "nidificate",
+				"osculator", "parsimonious", "penultimate", "perfidiousness", "perspicacious", "proficuous", "remunerative", "saxicolous",
+				"sesquipedalian", "superabundant", "unencumbered", "unparagoned", "usufruct", });
+		assertEquals("circumlocution", Algorithms.findLongestWord(words));
+	}
 
 	/*
 	 * 5. The Morse code for SOS is "... --- ..."
@@ -83,13 +83,13 @@ public class SearchingAndSortingAlgorithms {
 	/*
 	 * 9. Sort the words in alphabetical order. Your teacher may need to explain compareTo.
 	 */
-//	@Test
-//	public void testSortStringContents() throws Exception {
-//		List<String> words = Arrays.asList(new String[] { "aby", "dap", "alt", "alb", "ama", "ard", "ana", "ala", "awn", "dah", "bar",
-//				"bee", "bel", "bot", "bis", "cep", "alk", "cog", "col", "cwm", "dag", "ait", "dal", "daw" });
-//		assertEquals("aby", Algorithms.sortWords(words).get(0));
-//		assertEquals("bar", Algorithms.sortWords(words).get(10));
-//		assertEquals("daw", Algorithms.sortWords(words).get(words.size() - 1));
-//	}
+	@Test
+	public void testSortStringContents() throws Exception {
+		List<String> words = Arrays.asList(new String[] { "aby", "dap", "alt", "alb", "ama", "ard", "ana", "ala", "awn", "dah", "bar",
+				"bee", "bel", "bot", "bis", "cep", "alk", "cog", "col", "cwm", "dag", "ait", "dal", "daw" });
+		assertEquals("aby", Algorithms.sortWords(words).get(0));
+		assertEquals("bar", Algorithms.sortWords(words).get(10));
+		assertEquals("daw", Algorithms.sortWords(words).get(words.size() - 1));
+	}
 
 }
