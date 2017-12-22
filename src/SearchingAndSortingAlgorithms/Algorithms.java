@@ -77,15 +77,17 @@ public class Algorithms {
 		return words;
 	}
 
+
 	public static String findLongestWord(List<String> words) {
-		int hold=
+		
 		String longest="";
-		for(int i = 0; i < words.size(); i++) {
+		for(String word: words) {
 			
-			if(words.get(i).length(){
+			if(word.length()>longest.length()) {
+				longest=word;
 				
 			}
 		}
-		return null;
+		return longest;
 	}
 }
